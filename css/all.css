@@ -1,0 +1,268 @@
+/* 字型 */
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.wrap{
+    max-width: 1200px;
+    margin: 0 auto;
+    /* window resize */
+    transition: all 1s;
+}
+.header{
+    position: relative;
+}
+.header h1{
+    font-size: 30px;
+    color: #FFFFFF;
+    letter-spacing: 3.89px;
+    margin-bottom: 96px;
+    text-shadow: 0 0 0.2em #8A82CC, 0 0 0.2em #8A82CC;
+    /* window resize */
+    transition: all 1s;
+}
+.area{
+    width: 44%;
+    padding: 13px;
+    font-size: 18px;
+    line-height: 21px;
+
+    background: rgba(255,255,255,0.70);
+    border: 3px solid #FFFFFF;
+    border-radius: 3px;
+
+    /* window resize */
+    transition: all 1s;
+}
+.banner{
+    /* height: 380px; */
+    background: url("../img/assets/Hero.png") center no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* window resize */
+    transition: all 1s;
+}
+.popular{
+    width: 80%;
+    padding: 20px 25px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px 0 ;
+    position: absolute;
+    z-index: 100;
+    top: 93%;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    /* window resize */
+    transition: all 1s;
+}
+.popular .list{
+    display: flex;
+
+}
+.popular .list a{
+    display: block;
+    text-decoration: none;
+    padding: 12px 35px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin: 15px 0 0 10px;
+    color: #fff;
+    transition: all 0.5x linear;
+}
+.popular .list a:hover{
+    transform:scale(1.1,1.1);
+}
+.popular .top1{
+    background: #8A82CC;
+}
+.popular .top2{
+    background: #FFA782;
+}
+.popular .top3{
+    background: #F5D005;
+}
+.popular .top4{
+    background: #559AC8;
+}
+.content{
+    padding: 135px 40px 40px;
+    background: rgb(245, 245, 245);
+}
+.horiLine{
+    margin: 0 auto 75px;
+    position: relative;
+}
+.horiLine hr{
+    border-top: 1px dashed #559AC8;
+}
+.horiLine .fas{
+    position: absolute;
+    top: -12px;
+    left: 48%;
+    color: #559AC8;
+    border: 2px solid #559AC8;
+    background-color: rgb(245, 245, 245);
+    padding: 0 5px 8px 5px;
+    border-radius: 50%;
+}
+.content .area-name{
+    font-size: 36px;
+    color: #8A82CC;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.attractionsList {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.attractionsList > li{
+    width: 49%;
+    margin-bottom: 36px;
+    background: #FFFFFF;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
+}
+.attractionsList .header{
+    padding-top: 103px;
+}
+.attractionsList .header .title{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 14px 22px;
+    color: #fff;
+    font-size: 16px;
+}
+.attractionsList .header .title h3{
+    font-size: 22px;
+}
+.attractionsList .info{
+    padding: 15px 24px;
+    font-size: 16px;
+    line-height: 24px;
+}
+.attractionsList .info li a{
+    color: #000;
+    text-decoration: none;
+}
+.attractionsList .info li a:hover{
+    color: #8A82CC;
+}
+.attractionsList .info >li{
+    padding-left: 28px;
+    margin: 6px 0;
+}
+.attractionsList .info .time{
+    background: url(../img/assets/icons_clock.png) no-repeat left top;
+}
+.attractionsList .info .addr{
+    background: url(../img/assets/icons_pin.png) no-repeat left top;
+}
+.attractionsList .info .tel{
+    background: url(../img/assets/icons_phone.png) no-repeat left 2px top;
+}
+.attractionsList .info .tel > span{
+    float: right;
+    padding-left: 28px;
+    background: url(../img/assets/icons_tag.png) no-repeat left top;
+}
+
+.page{
+    display: flex;
+    justify-content:center;
+}
+.page li a{
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    padding: 8px 8px;
+    color:  #559AC8;
+    border: 0.5px solid transparent;
+}
+.page li a:hover{
+    color:  #559AC8;
+    background: #fff;
+    border: 0.5px solid #559AC8;
+}
+.page .selected a{
+    color: #fff;
+    background: #559AC8;
+}
+
+
+
+.footer{
+    padding: 24px;
+    background: #559AC8;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+.footer p{
+    color: #FFD366;
+    padding-top: 15px;
+}
+.top-btn{
+    background: url(../img/assets/btn_goTop.png) no-repeat center/cover;
+    height: 24px;
+    width: 24px;
+    position: fixed;
+    right: 8%;
+    bottom: 100px;
+    z-index: 1000;
+
+    transition: all 0.5s;
+}
+.top-btn:hover{
+    transform:scale(1.5,1.5);
+}
+.fly{
+    opacity: 0;
+    transform: translateY(900px);
+}
+
+
+/*https://www.w3schools.com/css/css_tooltip.asp*/
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+.tooltip:hover {
+    cursor: pointer;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 180%;
+    background-color: #8A82CC;
+    color: #fff;
+    opacity:0.8;
+    letter-spacing: 1px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px;
+    position: absolute;
+    z-index: 1;
+    top: 150%;
+    left: 50%;
+    margin-left: -90%;/* Use half of the width (120/2 = 60), to center the tooltip */
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #8A82CC transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+} 
